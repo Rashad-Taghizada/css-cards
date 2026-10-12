@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;    
+  justify-content: center;
+}
+.background-image{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('assets/images/desert.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: white;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25); 
+}
+.card main{
+    flex-grow: 1;
+}
+.card header {
+    width: 100%;
+    height: 250px; 
+    overflow: hidden;
+}
+.card-image {
+    width: 100%;
+    height: 250px; 
+    overflow: hidden;
+}
+.card header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.card-content{
+    padding:  15px;
+    text-align: center;
+}
+footer {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    background: #FF1493; 
+    padding: 20px 0;
+}
+
+footer > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+footer > div:not(:last-child) {
+    position: relative;
+    padding-right: 15px;
+    margin-right: 15px;
+}
+
+footer > div:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 24px; 
+    background-color: rgba(255, 255, 255, 0.5);
+}
+footer p {
+    margin: 4px 0; 
+    color: white;
+}
+.card2{
+    background-color: rgb(8, 139, 210);
+}
+.card3{
+    background-color: rgb(11, 209, 11);
+}
+.card-date{
+  color: rgb(208, 28, 58);  
+}
